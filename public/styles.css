@@ -1,0 +1,84 @@
+/* --- ESTILOS PERSONALIZADOS (ETAPA 4 - BOOTSTRAP) --- */
+
+/* Variáveis de Cor (ainda úteis para nossa identidade visual) */
+:root {
+    --cor-primaria: #2c3e50; /* Azul escuro */
+    --cor-secundaria: #e74c3c; /* Vermelho/Laranja */
+    --cor-fundo: #ecf0f1; /* Cinza claro */
+    --cor-texto: #34495e; /* Cinza azulado */
+    --cor-branco: #ffffff;
+}
+
+/* REMOVIDO: .container (Bootstrap já tem)
+   REMOVIDO: Regras de Flexbox e Grid (ex: .cards-grid)
+   REMOVIDO: TODAS as Media Queries (@media)
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-texto);
+}
+
+/* Estilos do Cabeçalho Personalizado */
+.logo {
+    font-size: 1.8rem;
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+.nav-link-custom {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 600;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+    color: var(--cor-secundaria);
+}
+
+/* Estilos do Banner (ainda precisamos da nossa imagem) */
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1470&auto-format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    color: var(--cor-branco); /* Bootstrap não define a cor do texto para fundos claros, então forçamos */
+}
+
+/* Ajustes finos nos cards para manter nosso visual */
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+}
+
+.card-icon {
+    padding-top: 1.5rem;
+}
+
+.card-icon i {
+    font-size: 5rem;
+    color: var(--cor-secundaria);
+}
+
+/* Estilos do Rodapé Personalizado */
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+}
+
+.social-links a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
