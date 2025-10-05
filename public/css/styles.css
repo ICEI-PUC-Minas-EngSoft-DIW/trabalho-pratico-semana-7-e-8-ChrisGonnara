@@ -1,13 +1,11 @@
-
-/* Variáveis de Cor (ainda úteis para nossa identidade visual) */
+/* Estilos Globais */
 :root {
-    --cor-primaria: #2c3e50; /* Azul escuro */
-    --cor-secundaria: #e74c3c; /* Vermelho/Laranja */
-    --cor-fundo: #ecf0f1; /* Cinza claro */
-    --cor-texto: #34495e; /* Cinza azulado */
+    --cor-primaria: #2c3e50; 
+    --cor-secundaria: #e74c3c; 
+    --cor-fundo: #ecf0f1;
+    --cor-texto: #34495e;
     --cor-branco: #ffffff;
 }
-
 
 body {
     font-family: 'Poppins', sans-serif;
