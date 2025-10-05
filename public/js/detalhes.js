@@ -54,12 +54,12 @@ const cards = [
     }
 ];
 
-// Função para montar vários parágrafos
+// Função para renderizar parágrafos
 function renderParagraphs(arr) {
     return arr ? arr.map(text => `<p>${text}</p>`).join('') : '';
 }
 
-// Pega id da query string
+// Pega o ID da URL
 const urlParams = new URLSearchParams(window.location.search);
 const itemId = parseInt(urlParams.get('id'));
 
